@@ -19,7 +19,7 @@ I think the word "generally"" is quite important here.
 a) Large n and small p, we would expect a more flexible method to provide a better fit because it is fitting the data more closely without having the effect of overfitting increasing the error as much. 
 
 
-b) Large p and small n, we would expect a LESS flexible method to provide a better fit because it is more robust
+b) Large p and small n, we would expect a LESS flexible method to provide a better fit because it is more robust and therefore less likely to overfit. 
 
 - In other words, the decrease in bias would be bigger than the increase in variance when n is huge and p is small. THis relationship is reversed if the condition is reversed. 
 
@@ -35,11 +35,11 @@ c) if the true underlyinig relationship is non - linear, this would mean we expe
 
 ```
 
-## Including Plots
+## Question 2
 
 You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
+```{r}
 
 ```
 
