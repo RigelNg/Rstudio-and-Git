@@ -29,18 +29,40 @@ THink of solving x+y+z = 10 and 2x+3y+4z = 25
 
 c) if the true underlyinig relationship is non - linear, this would mean we expect a linear method to perform badly at the predicting. 
 
+d) The variance of the error is high which suggest there is a lot of noise, a more flexible method will tend to overadjust to these noises and thus provide a model that would overfit the data. A less flexible will be more robust to overfitting and thus perform better in this instance. (SEE Experiment folder)
+
 
 
 ```{r cars}
+
 
 ```
 
 ## Question 2
 
-You can also embed plots, for example:
+####Note: We tend to refer to problems with a quantitative response as regression problems, while those involving a qualitative response are often referred to as classi???cation problems
+
+a) CEO's salary is quantitative and thus this is a regression problem. Since we are interested in the relationship between n and p, this can be treated as an inference problem. n = 500, p = profit, number of employees, industry (3)
+
+b) The response, success and failure is a qualitative and thus it is a classification problem, we are interested in the outcome and thus this can be treated as a prediction problem as well. n = 20, p = priced charged, marketing budget, competition price, and ten other variables ~ p = 13.
+
+c) the response is quantitative so this is a regression problem. n = 52 , p = % change in dollar, % change in us market,% change in british market, % change in german market. p = 4
+
+## Question 3
+
+## Question 4
+ 
+
+
+
+
+
 
 ```{r}
 
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
