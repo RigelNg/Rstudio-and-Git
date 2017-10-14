@@ -134,25 +134,25 @@ linear4
 plot(x1,y)
 ```
 
-![](Experiment_3_files/figure-html/multiple linear regression-1.png)<!-- -->
+![](Experiment_3_files/figure-html/multiple_linear_regression-1.png)<!-- -->
 
 ```r
 plot(x2,y)
 ```
 
-![](Experiment_3_files/figure-html/multiple linear regression-2.png)<!-- -->
+![](Experiment_3_files/figure-html/multiple_linear_regression-2.png)<!-- -->
 
 ```r
 plot(x1+x2,y)
 ```
 
-![](Experiment_3_files/figure-html/multiple linear regression-3.png)<!-- -->
+![](Experiment_3_files/figure-html/multiple_linear_regression-3.png)<!-- -->
 
 ```r
 plot(linear4)
 ```
 
-![](Experiment_3_files/figure-html/multiple linear regression-4.png)<!-- -->![](Experiment_3_files/figure-html/multiple linear regression-5.png)<!-- -->![](Experiment_3_files/figure-html/multiple linear regression-6.png)<!-- -->![](Experiment_3_files/figure-html/multiple linear regression-7.png)<!-- -->
+![](Experiment_3_files/figure-html/multiple_linear_regression-4.png)<!-- -->![](Experiment_3_files/figure-html/multiple_linear_regression-5.png)<!-- -->![](Experiment_3_files/figure-html/multiple_linear_regression-6.png)<!-- -->![](Experiment_3_files/figure-html/multiple_linear_regression-7.png)<!-- -->
 
 ```r
 #linear3 = lm(y~x3,x4)
@@ -192,7 +192,7 @@ y2 = rnorm(200,0.3*x1-0.4*x2,1)
 plot(x1+x2, y2)
 ```
 
-![](Experiment_3_files/figure-html/multiple linear regression-8.png)<!-- -->
+![](Experiment_3_files/figure-html/multiple_linear_regression-8.png)<!-- -->
 
 ```r
 linear7= lm(y2~x1+x2)
@@ -213,7 +213,7 @@ linear7
 plot(x1,x2)
 ```
 
-![](Experiment_3_files/figure-html/multiple linear regression-9.png)<!-- -->
+![](Experiment_3_files/figure-html/multiple_linear_regression-9.png)<!-- -->
 
 ```r
 cor(x1,x2)

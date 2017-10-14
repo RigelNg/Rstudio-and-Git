@@ -49,7 +49,7 @@ linear3
 
 You can also embed plots, for example:
 
-```{r multiple linear regression}
+```{r multiple_linear_regression}
 
 ## The true underlying relationship y= x3+x4 with errors....
 set.seed(1)
