@@ -13,7 +13,11 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```r
 x = runif(200,0,100)
+y= rnorm(200,x,1)
+plot(x,y)
 ```
+
+![](experiment2_files/figure-html/cars-1.png)<!-- -->
 
 ## Including Plots
 

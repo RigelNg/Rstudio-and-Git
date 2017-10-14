@@ -19,6 +19,8 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r cars}
 x = runif(200,0,100)
+y= rnorm(200,x,1)
+plot(x,y)
 ```
 
 ## Including Plots
