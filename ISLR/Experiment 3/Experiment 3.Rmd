@@ -52,7 +52,7 @@ You can also embed plots, for example:
 ```{r multiple linear regression}
 
 ## The true underlying relationship y= x3+x4 with errors....
-
+set.seed(1)
 x1= runif(200,0,50)
 x2=runif(200,0,100)
 

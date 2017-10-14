@@ -111,7 +111,7 @@ You can also embed plots, for example:
 
 ```r
 ## The true underlying relationship y= x3+x4 with errors....
-
+set.seed(1)
 x1= runif(200,0,50)
 x2=runif(200,0,100)
 
@@ -127,7 +127,7 @@ linear4
 ## 
 ## Coefficients:
 ## (Intercept)           x1           x2  
-##    0.002888     1.001695     0.998284
+##    -0.08386      0.99996      1.00268
 ```
 
 ```r
@@ -169,7 +169,7 @@ linear5
 ## 
 ## Coefficients:
 ## (Intercept)           x1  
-##      52.895        1.017
+##      43.175        1.146
 ```
 
 ```r
@@ -184,7 +184,7 @@ linear6
 ## 
 ## Coefficients:
 ## (Intercept)           x2  
-##      24.046        1.002
+##      24.288        1.035
 ```
 
 ```r
@@ -206,7 +206,7 @@ linear7
 ## 
 ## Coefficients:
 ## (Intercept)           x1           x2  
-##    -0.08235      0.30453     -0.40158
+##     -0.1353       0.3044      -0.4004
 ```
 
 ```r
@@ -220,7 +220,7 @@ cor(x1,x2)
 ```
 
 ```
-## [1] 0.007420397
+## [1] 0.06837504
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
