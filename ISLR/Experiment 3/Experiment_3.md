@@ -20,5 +20,42 @@ x = rnorm(200,y,1)
 plot(x,y)
 ```
 
-![](Experiment_3_files/figure-html/cars-1.png)<!-- -->
+![](Experiment_3_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+
+```r
+linear = lm(y~x)
+linear
+```
+
+```
+## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Coefficients:
+## (Intercept)            x  
+##      0.0653       0.9988
+```
+
+```r
+x1 = rnorm(200,y,10)
+plot(y,x1)
+```
+
+![](Experiment_3_files/figure-html/unnamed-chunk-1-2.png)<!-- -->
+
+```r
+linear1 =  lm(y~x)
+linear1
+```
+
+```
+## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Coefficients:
+## (Intercept)            x  
+##      0.0653       0.9988
+```
 
