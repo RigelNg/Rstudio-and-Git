@@ -82,7 +82,24 @@ plot(x1,x2)
 cor(x1,x2)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r multiple_linear_regression_2}
+## does adding noise to the coefficient different than adding noise to the error term?
+set.seed(1)
+y=runif(200,0,100)
+x=rnorm(200,y,1) + rnorm(1, mean = 0, sd = 1)
+x
+x1 = rnorm(200,rnorm(200,y,1),1)
+x1
+plot(x,y)
+plot (x1,y)
+
+linear = lm(y~x)
+linear
+linear = lm(y~x1)
+linear
+summary(x)
+summary(x1)
 
 ```
 
