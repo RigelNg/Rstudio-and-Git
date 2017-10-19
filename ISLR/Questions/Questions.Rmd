@@ -1,0 +1,22 @@
+---
+title: "Questions for Omar"
+author: "Rigel"
+date: "October 17, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+ Is the way that computer chooses the first node equals to the significance of the coefficent in basic linear regression??
+
+eg. if the algorithm decides that the first split occurs at x1 < 0.5 and x1> 0.5, does this make x1 the most important feature??
+
+ In Linear regression the training error always decreases as the model becomes more flexibile, how come this is not the case in decision trees??
+
+
+
+
+
+```{r}

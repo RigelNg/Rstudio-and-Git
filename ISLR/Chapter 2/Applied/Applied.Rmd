@@ -1,0 +1,23 @@
+---
+title: "Chapter 2 Applied"
+author: "Rigel"
+date: "October 19, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+college=ISLR::College
+head(college)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
