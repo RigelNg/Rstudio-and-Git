@@ -2,7 +2,9 @@
 title: "Chapter 2 Applied"
 author: "Rigel"
 date: "October 19, 2017"
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
