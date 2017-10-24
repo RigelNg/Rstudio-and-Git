@@ -12,8 +12,43 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r}
+
+#Question 8 , Chapter 2 applied
+
+
 college=ISLR::College
 head(college)
+
+head(rownames(college))
+
+#i)
+
+summary(college)
+
+#ii)
+pairs(college[,1:10])
+
+#iii)We can attach the varaibles by using attach(college)
+
+plot(college$Private, college$Outstate)
+
+#iv) 
+
+Elite= rep("No",nrow(college))
+Elite[college$Top10perc>50]= "Yes"
+Elite = as.factor(Elite)
+college = data.frame(college,Elite)
+
+summary(college)
+
+#v)
+
+hist(college$Apps)
+
+#vi) 
+
+
+
 
 ```
 
