@@ -225,8 +225,26 @@ plot(college$Expend, college$Grad.Rate)
 ![](Applied_files/figure-html/unnamed-chunk-1-6.png)<!-- -->
 
 
-```q9
-
+```r
 #Question 9
 
+auto= ISLR::Auto
+head(auto)
+```
+
+```
+##   mpg cylinders displacement horsepower weight acceleration year origin
+## 1  18         8          307        130   3504         12.0   70      1
+## 2  15         8          350        165   3693         11.5   70      1
+## 3  18         8          318        150   3436         11.0   70      1
+## 4  16         8          304        150   3433         12.0   70      1
+## 5  17         8          302        140   3449         10.5   70      1
+## 6  15         8          429        198   4341         10.0   70      1
+##                        name
+## 1 chevrolet chevelle malibu
+## 2         buick skylark 320
+## 3        plymouth satellite
+## 4             amc rebel sst
+## 5               ford torino
+## 6          ford galaxie 500
 ```

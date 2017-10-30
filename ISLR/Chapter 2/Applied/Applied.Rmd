@@ -87,7 +87,11 @@ plot(college$Top10perc, college$Grad.Rate)
 plot(college$Expend, college$Grad.Rate)
 ```
 
-```{Q9}
+```{r}
 
 #Question 9
 
+auto= ISLR::Auto
+head(auto)
+
+```
