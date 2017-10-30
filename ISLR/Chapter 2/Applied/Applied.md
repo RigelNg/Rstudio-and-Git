@@ -10,8 +10,11 @@ October 19, 2017
 ```r
 #Question 8 , Chapter 2 applied
 
+#Since we have ISLR pre-installed, we can simply load it from the librarys 
 
 college=ISLR::College
+
+#We use head to show the head of the data frame since the entire data frame is too big to include here
 head(college)
 ```
 
@@ -47,6 +50,8 @@ head(college)
 ```
 
 ```r
+#We can also show the first 6 colleges by using row names and head together
+
 head(rownames(college))
 ```
 
@@ -58,6 +63,8 @@ head(rownames(college))
 
 ```r
 #i)
+
+# to get an overview of the the dataframe
 
 summary(college)
 ```
@@ -108,7 +115,7 @@ pairs(college[,1:10])
 ![](Applied_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
 
 ```r
-#iii)We can attach the varaibles by using attach(college)
+#iii)We can also do this by attaching the varaibles by using attach(college)
 
 plot(college$Private, college$Outstate)
 ```
@@ -171,6 +178,12 @@ hist(college$Apps)
 ```
 
 ![](Applied_files/figure-html/unnamed-chunk-1-3.png)<!-- -->
+
+```r
+plot(college$Elite, college$Outstate)
+```
+
+![](Applied_files/figure-html/unnamed-chunk-1-4.png)<!-- -->
 
 ```r
 #vi) 

@@ -17,20 +17,27 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #Question 8 , Chapter 2 applied
 
+#Since we have ISLR pre-installed, we can simply load it from the librarys 
 
 college=ISLR::College
+
+#We use head to show the head of the data frame since the entire data frame is too big to include here
 head(college)
+
+#We can also show the first 6 colleges by using row names and head together
 
 head(rownames(college))
 
 #i)
+
+# to get an overview of the the dataframe
 
 summary(college)
 
 #ii)
 pairs(college[,1:10])
 
-#iii)We can attach the varaibles by using attach(college)
+#iii)We can also do this by attaching the varaibles by using attach(college)
 
 plot(college$Private, college$Outstate)
 
@@ -43,9 +50,11 @@ college = data.frame(college,Elite)
 
 summary(college)
 
+
 #v)
 
 hist(college$Apps)
+plot(college$Elite, college$Outstate)
 
 #vi) 
 
