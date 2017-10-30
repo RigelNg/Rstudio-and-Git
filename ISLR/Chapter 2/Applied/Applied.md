@@ -172,24 +172,61 @@ summary(college)
 ```
 
 ```r
-#v)
-
-hist(college$Apps)
+plot(college$Elite, college$Outstate)
 ```
 
 ![](Applied_files/figure-html/unnamed-chunk-1-3.png)<!-- -->
 
 ```r
-plot(college$Elite, college$Outstate)
+# we can add lables to it as well 
+
+plot(college$Elite, college$ Outstate, xlab = "Elite University", ylab = "Out of state tuition fee")
 ```
 
 ![](Applied_files/figure-html/unnamed-chunk-1-4.png)<!-- -->
 
 ```r
-#vi) 
+#As from the graph, we can clearly see that that the out of state tuition fee for an elite university is much higher than a non-elite university. 
+
+
+#v)
+
+par(mfrow=c(2,2))
+
+
+hist(college$Apps)
+hist(college$Accept)
+hist(college$Enroll)
+hist(college$Top10perc)
 ```
 
-## Including Plots
+![](Applied_files/figure-html/unnamed-chunk-1-5.png)<!-- -->
 
-You can also embed plots, for example:
+```r
+hist(college$Top25perc)
 
+#vi)
+
+# We can use plot to understand relationship between variables. 
+
+#say we are trying to understand the relationship between the percentage of PHD and the percentage of alumni who donates
+
+plot(college$PhD, college$perc.alumni)
+
+# we can see that there is a slight positive trend with a lot of variation 
+
+#We can also try to understand the 
+
+plot(college$Top10perc, college$Grad.Rate)
+
+plot(college$Expend, college$Grad.Rate)
+```
+
+![](Applied_files/figure-html/unnamed-chunk-1-6.png)<!-- -->
+
+
+```q9
+
+#Question 9
+
+```
