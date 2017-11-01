@@ -1,0 +1,35 @@
+---
+title: "Genes"
+author: "Rigel"
+date: "November 1, 2017"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+ The data set 'Genes' contains a single response Y (whether the leaf length for a particular plant was bigger than average) and p = 3,235 genetic markers. 
+ . If Y = 1, then the leaf length is greater than average for that plant and Y = 0 otherwise. 
+ . The genetic markers are coded as 1, 0.5, 0. A higher value suggests that the gene is more 'switched on'. You may treat these as continuous variables. 
+ 
+ The Question?
+ . Determine which, if any, of the genetic markers are associated with with a greater than average leaf length.
+
+```{r}
+
+
+
+library(readxl)
+genes<- read_excel("C:/Users/Rigel/Desktop/Final Semester/STAT learning individual Assignment/Genes_Data_converted.xlsx")
+
+head(genes)
+
+
+
+```
+

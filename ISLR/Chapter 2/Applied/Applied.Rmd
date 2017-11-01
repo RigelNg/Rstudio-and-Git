@@ -80,18 +80,82 @@ plot(college$PhD, college$perc.alumni)
 
 # we can see that there is a slight positive trend with a lot of variation 
 
-#We can also try to understand the 
+#We can also try to understand the relationship between the following variables.
 
 plot(college$Top10perc, college$Grad.Rate)
 
 plot(college$Expend, college$Grad.Rate)
+
+plot(college$Elite, college$Grad.Rate)
 ```
 
 ```{r}
 
 #Question 9
 
+#Data visualization
 auto= ISLR::Auto
 head(auto)
+auto$origin
 
+head(summary(auto))
+
+head(auto,10)
+#a)
+
+sapply(auto[1:8], unique)
+#From just a glance it appears that mpg, displacement horsepower, weight and acceleration and year are quantitative and the rest are qualitative 
+
+#Asadoughi thinks cylinders are quantitative, Since there are only 5 unique values I feel like this should be factorised by using the as.factor function so we will have 4 dummy variables. 
+
+#b)
+sapply(auto[c(1,3:7)], range)
+
+#c)
+sapply(auto[c(1,3:7)], mean)
+sapply(auto[c(1,3:7)], sd)
+
+#We create a new dataframe called newauto 
+
+#From asadoughi
+#d)
+
+dim(auto)
+newauto = auto[-(10:85),]
+dim(newauto) == dim(auto) -c(76,0)
+dim(newauto)
+
+#The 9th observation matches
+newauto[9,] == auto[9,]
+#The 10th observation from newauto matches the 86th observation from auto since everything in between is removed
+newauto[10,] == auto[86,]
+
+
+
+
+sapply(newauto[c(1,3:7)], range)
+
+sapply(newauto[c(1,3:7)], mean)
+sapply(newauto[c(1,3:7)], sd)
+
+#e)
+pairs(auto)
+plot(auto$mpg,auto$horsepower)
+# miles per gallon decreases as the horse power increases
+plot(auto$mpg, auto$displacement)
+#similar trend for mpg and displacement
+plot(auto$weight, auto$acceleration)
+
+#No noticeable trend between acceleration and weight
+
+
+#f)
+
+attach(auto)
+linear =lm(mpg~ cylinders+displacement+horsepower+weight+acceleration+year, data=auto)
+linear
+
+summary(linear)
 ```
+
+Roses are <span style="color:red">red</span>
