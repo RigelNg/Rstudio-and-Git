@@ -28,6 +28,10 @@ library(readxl)
 genes<- read_excel("C:/Users/Rigel/Desktop/Final Semester/STAT learning individual Assignment/Genes_Data_converted.xlsx")
 
 head(genes)
+pcr <- prcomp(genes)
+plot(pcr)
+pcr
+summary(pcr)
 
 
 
